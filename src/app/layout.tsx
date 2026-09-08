@@ -93,6 +93,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           src="https://pl31244371.profitableratecpmnetwork.com/04/7b/5c/047b5c94e75117512994300cc7ba1fda.js"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://pl31244373.profitableratecpmnetwork.com/17/f2/fb/17f2fb3f9f5daa85bea2ae04e5c40914.js"
+          strategy="afterInteractive"
+        />
         <style id="ad-cls-reservation">
           {
             ".ad-shell,.ad-container,[data-ad-slot]{min-height:90px}.ad-leaderboard .ad-shell{min-height:124px}.ad-placement-native-priority .ad-shell{min-height:150px}"
