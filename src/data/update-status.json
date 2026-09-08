@@ -1,8 +1,8 @@
 {
   "gameSlug": "stealanegg",
-  "status": "bootstrap-ready",
-  "checkedAt": null,
-  "checkedDate": null,
+  "status": "pass",
+  "checkedAt": "2026-09-08T09:57:42.392Z",
+  "checkedDate": "2026-09-08",
   "checks": {
     "requiredRoutes": [
       "/",

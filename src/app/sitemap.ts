@@ -24,6 +24,7 @@ const routes: Array<{
   { path: "/wiki/maps-and-systems", changeFrequency: "weekly", priority: 0.76 },
   { path: "/wiki/builds-and-entities", changeFrequency: "weekly", priority: 0.76 },
   { path: "/updates", changeFrequency: "daily", priority: 0.75 },
+  { path: "/updates/light-vs-darkness", changeFrequency: "daily", priority: 0.82 },
   { path: "/sources", changeFrequency: "monthly", priority: 0.5 },
   { path: "/about", changeFrequency: "monthly", priority: 0.4 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.3 },

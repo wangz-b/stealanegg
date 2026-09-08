@@ -633,10 +633,10 @@ export const wikiTopicPages: TopicPage[] = [
 
 export const updateCards: LinkCard[] = [
   {
-    title: "Patch and event watch",
-    href: "/updates",
-    eyebrow: "Updates",
-    description: "Track active patches, limited events, milestone rewards, and pages that may need updates."
+    title: "Light vs Darkness event",
+    href: "/updates/light-vs-darkness",
+    eyebrow: "Sep 12–13",
+    description: "Official event timing, confirmed teaser details, and clear boundaries around unverified rewards."
   },
   {
     title: "Code refresh checks",
