@@ -412,6 +412,17 @@ export function AdsterraDirectNative() {
   );
 }
 
+export function AdsterraDirectBanner468() {
+  const cleanAdRoute = useCleanAdRoute();
+  if (cleanAdRoute) return null;
+
+  return (
+    <div className="ad-placement ad-placement-bottom">
+      <AdsterraBannerUnit size="468x60" slotName="direct_banner_468x60" />
+    </div>
+  );
+}
+
 export function AdsterraArticleTop() {
   if (!hasPrimaryNativeSlot() && !hasLeaderboardSlot()) return null;
 

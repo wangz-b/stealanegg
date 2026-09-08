@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import {
+  AdsterraDirectBanner468,
   AdsterraDirectNative,
   AdsterraPopunderGate,
   AdsterraSmartLink,
@@ -106,6 +107,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <AdsterraSocialBarGate />
         <Navbar />
         {children}
+        <AdsterraDirectBanner468 />
         <AdsterraSmartLink />
         <AdsterraDirectNative />
         <AdsterraStickyRail />
