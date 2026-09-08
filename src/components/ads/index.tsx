@@ -333,7 +333,18 @@ function AdsterraNativeUnit({
 }
 
 export function AdsterraSmartLink() {
-  return null;
+  const cleanAdRoute = useCleanAdRoute();
+  if (cleanAdRoute || !runtimeConfig.adsterraSmartLinkUrl) return null;
+
+  return (
+    <div className="mx-auto mt-10 w-full max-w-7xl px-4">
+      <AdvertisementShell label="Sponsored">
+        <AdsterraSmartLinkAnchor className="button-secondary button-small">
+          View sponsored gaming offer
+        </AdsterraSmartLinkAnchor>
+      </AdvertisementShell>
+    </div>
+  );
 }
 
 export function AdsterraSmartLinkAnchor({

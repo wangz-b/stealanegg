@@ -104,9 +104,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </style>
         <AdsterraPopunderGate />
         <AdsterraSocialBarGate />
-        <AdsterraSmartLink />
         <Navbar />
         {children}
+        <AdsterraSmartLink />
         <AdsterraDirectNative />
         <AdsterraStickyRail />
         <Footer />

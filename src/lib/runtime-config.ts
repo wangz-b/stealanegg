@@ -36,7 +36,9 @@ export const runtimeConfig = {
   adsterraNative1Id: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_1_ID),
   adsterraNative1ScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_1_SCRIPT_URL),
   adsterraLeaderboardId: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_LEADERBOARD_ID),
-  adsterraSmartLinkUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_SMARTLINK_URL),
+  adsterraSmartLinkUrl:
+    readEnv(process.env.NEXT_PUBLIC_ADSTERRA_SMARTLINK_URL) ||
+    "https://www.profitableratecpmnetwork.com/zh80r1m13?key=68c3a4f340f49574d4bd4389474ef226",
   adsterraPopunderScriptUrl: readEnv(process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL),
   adsterraEnablePopunder: readBooleanEnv(process.env.NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER, false),
   adsterraPopunderDelayMs: readNumberEnv(process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_DELAY_MS, 30000),
