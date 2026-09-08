@@ -53,6 +53,9 @@ const bannerConfigs: Record<BannerSize, BannerConfig> = {
 };
 
 const CLEAN_AD_ROUTES = new Set(["/about", "/contact", "/disclosure", "/privacy", "/sources", "/terms"]);
+const DIRECT_NATIVE_CONTAINER_ID = "container-9aa2763c922cdb3c353f56ae271cd5ae";
+const DIRECT_NATIVE_SCRIPT_URL =
+  "https://pl31244372.profitableratecpmnetwork.com/9aa2763c922cdb3c353f56ae271cd5ae/invoke.js";
 
 declare global {
   interface Window {
@@ -380,6 +383,21 @@ export function AdsterraNative1({ slotName = "native_primary" }: { slotName?: st
       slotName={slotName}
       scriptUrl={runtimeConfig.adsterraNative1ScriptUrl}
     />
+  );
+}
+
+export function AdsterraDirectNative() {
+  const cleanAdRoute = useCleanAdRoute();
+  if (cleanAdRoute) return null;
+
+  return (
+    <div className="ad-placement ad-placement-bottom ad-placement-native-priority">
+      <AdsterraNativeUnit
+        containerId={DIRECT_NATIVE_CONTAINER_ID}
+        slotName="native_direct_9aa2763c"
+        scriptUrl={DIRECT_NATIVE_SCRIPT_URL}
+      />
+    </div>
   );
 }
 
